@@ -19,6 +19,8 @@
 -->
 
 ## Upcoming Release
+
+## Version 3.0.0
 * Enabled secrets detection option by default.
 * Fixed a null reference issue during the process of `Get-AzContext -ListAvailable` [#24854].
 * Supported interactive subscription selection for user login flow. See more details at [Announcing a new login experience with Azure PowerShell and Azure CLI
