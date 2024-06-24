@@ -1,5 +1,5 @@
 ---
-external help file: Az.Functions-help.xml
+external help file:
 Module Name: Az.Functions
 online version: https://learn.microsoft.com/powershell/module/az.functions/get-azfunctionapp
 schema: 2.0.0
@@ -14,25 +14,24 @@ Gets function apps in a subscription.
 
 ### GetAll (Default)
 ```
-Get-AzFunctionApp [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
- [<CommonParameters>]
+Get-AzFunctionApp [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### ByLocation
 ```
-Get-AzFunctionApp [-SubscriptionId <String[]>] -Location <String> [-DefaultProfile <PSObject>]
+Get-AzFunctionApp -Location <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ### ByName
 ```
-Get-AzFunctionApp [-SubscriptionId <String[]>] -ResourceGroupName <String> -Name <String>
+Get-AzFunctionApp -Name <String> -ResourceGroupName <String> [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### ByResourceGroupName
 ```
-Get-AzFunctionApp [-SubscriptionId <String[]>] -ResourceGroupName <String> [-IncludeSlot]
+Get-AzFunctionApp -ResourceGroupName <String> [-SubscriptionId <String[]>] [-IncludeSlot]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
@@ -53,6 +52,8 @@ Functions1-Windows-DoNet Running Windows DotNet  Central US  CentralUSPlan  Func
 Functions1-Windows-Java  Running Windows Java    West Europe Premium1-WE    Functions-West-Europe1    fe16564a-d943-4bf8-8c28-cf01708c3f8b
 ```
 
+
+
 ### Example 2: Get function apps by name.
 ```powershell
 Get-AzFunctionApp -ResourceGroupName Functions-West-Europe-Win -Name Functions1-Windows-DoNet
@@ -63,6 +64,8 @@ Name                     Status  OSType  Runtime Location   AppServicePlan Resou
 ----                     ------  ------  ------- --------   -------------- -----------------         --------------
 Functions1-Windows-DoNet Running Windows DotNet  Central US CentralUSPlan  Functions-West-Europe-Win fe16564a-d943-4bf8-8c28-cf01708c3f8b
 ```
+
+
 
 ### Example 3: Get function apps by resource group name.
 ```powershell
@@ -75,6 +78,8 @@ Name                     Status  OSType  Runtime Location   AppServicePlan Resou
 Functions1-Windows-DoNet Running Windows DotNet  Central US CentralUSPlan  Functions-West-Europe-Win fe16564a-d943-4bf8-8c28-cf01708c3f8b
 ```
 
+
+
 ### Example 4: Get function apps for the given subscriptions.
 ```powershell
 Get-AzFunctionApp -SubscriptionId fe16564a-d943-4bf8-8c28-cf01708c3f8b
@@ -86,6 +91,8 @@ Name                     Status  OSType  Runtime Location   AppServicePlan Resou
 Functions1-Windows-DoNet Running Windows DotNet  Central US CentralUSPlan  Functions-West-Europe-Win fe16564a-d943-4bf8-8c28-cf01708c3f8b
 ```
 
+
+
 ### Example 5: Get function apps by location.
 ```powershell
 Get-AzFunctionApp -Location "Central US"
@@ -96,6 +103,8 @@ Name                     Status  OSType  Runtime Location   AppServicePlan Resou
 ----                     ------  ------  ------- --------   -------------- -----------------         --------------
 Functions1-Windows-DoNet Running Windows DotNet  Central US CentralUSPlan  Functions-West-Europe-Win fe16564a-d943-4bf8-8c28-cf01708c3f8b
 ```
+
+
 
 ## PARAMETERS
 
@@ -196,8 +205,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20190801.ISite
+### Microsoft.Azure.PowerShell.Cmdlets.Functions.Models.Api20231201.ISite
 
 ## NOTES
 
 ## RELATED LINKS
+
