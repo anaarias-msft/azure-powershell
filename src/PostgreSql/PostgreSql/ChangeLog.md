@@ -19,6 +19,17 @@
 -->
 ## Upcoming Release
 
+## Version 1.3.0
+* Added support for Geo-restore in `Restore-AzPostgreSqlFlexibleServer` cmdlets.
+    - Automatically determined the paired region for the source server during geo-restore.
+    - Enhanced validation for private access and DNS zone configurations during restore operations.
+
+## Version 1.2.0
+* Upgraded nuget package to signed package.
+
+## Version 1.1.2
+* Fixed secrets exposure in example documentation.
+
 ## Version 1.1.1
 * Introduced secrets detection feature to safeguard sensitive data.
 
@@ -39,7 +50,7 @@
 * Added cmdlets for flexible server database
     - Get-AzPostgreSqlFlexibleServerDatabase
     - New-AzPostgreSqlFlexibleServerDatabase
-    - Remove-AzPostgreSqlFlexibleServerDatabase   
+    - Remove-AzPostgreSqlFlexibleServerDatabase
 
 ## Version 0.6.0
 * Migrated from 20200214 preview API to 20210601 API
