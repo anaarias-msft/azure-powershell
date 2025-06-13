@@ -32,7 +32,7 @@ New-AzVMwareAuthorization -Name <String> -PrivateCloudInputObject <IVMwareIdenti
 ```
 
 ## DESCRIPTION
-Create an ExpressRoute Circuit Authorization in a private cloud
+Create an ExpressRouteAuthorization
 
 ## EXAMPLES
 
