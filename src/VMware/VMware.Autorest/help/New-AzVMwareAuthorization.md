@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzVMwareAuthorization
 
 ## SYNOPSIS
-Create an ExpressRoute Circuit Authorization in a private cloud
+Create an ExpressRouteAuthorization
 
 ## SYNTAX
 
