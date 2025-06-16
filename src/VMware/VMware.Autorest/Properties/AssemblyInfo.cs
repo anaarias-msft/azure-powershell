@@ -16,13 +16,11 @@ using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Microsoft Azure Powershell - VMware")]
-[assembly: AssemblyCompany(Microsoft.WindowsAzure.Commands.Common.AzurePowerShell.AssemblyCompany)]
-[assembly: AssemblyProduct(Microsoft.WindowsAzure.Commands.Common.AzurePowerShell.AssemblyProduct)]
-[assembly: AssemblyCopyright(Microsoft.WindowsAzure.Commands.Common.AzurePowerShell.AssemblyCopyright)]
-
-[assembly: ComVisible(false)]
-[assembly: CLSCompliant(false)]
-[assembly: Guid("b99480f0-0241-42c4-8040-2534ee49fe4f")]
-[assembly: AssemblyVersion("0.6.2")]
-[assembly: AssemblyFileVersion("0.6.2")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Microsoft")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © Microsoft")]
+[assembly: System.Reflection.AssemblyProductAttribute("Microsoft Azure PowerShell")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Microsoft Azure PowerShell - VMware")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.7.2")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.7.2")]
+[assembly: System.Runtime.InteropServices.ComVisibleAttribute(false)]
+[assembly: System.CLSCompliantAttribute(false)]
