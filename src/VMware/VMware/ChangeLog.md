@@ -18,6 +18,24 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+* Updated the AVS VMware cmdlets api version to `2024-09-01`. 
+* Added cmdlet:
+    - `Get-AzVMwareHost`
+    - `Get-AzVMwareSku`
+    - `Get-AzVMwareProvisionedNetwork`
+    - `Get-AzVMwarePureStoragePolicy`
+    - `New-AzVMwarePureStoragePolicy`
+    - `Update-AzVMwarePureStoragePolicy`
+    - `Remove-AzVMwarePureStoragePolicy`
+
+## Version 0.7.2
+* Upgraded nuget package to signed package.
+
+## Version 0.7.1
+* Fixed secrets exposure in example documentation.
+
+## Version 0.7.0
+* Updated the AVS VMware cmdlets api version to `2023-09-01`. 
 
 ## Version 0.6.2
 * Introduced secrets detection feature to safeguard sensitive data.
